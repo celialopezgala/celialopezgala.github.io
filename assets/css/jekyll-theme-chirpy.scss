@@ -1,0 +1,14 @@
+---
+---
+@use 'main{%- if jekyll.environment == 'production' -%}.bundle{%- endif -%}';
+
+/* append your custom style below */
+
+html[data-mode='light'],
+html:not([data-mode]) {
+  --theme-color: #ff9a9e !important;
+}
+
+html[data-mode='dark'] {
+  --theme-color: #ff9a9e !important;
+}
