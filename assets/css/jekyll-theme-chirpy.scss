@@ -5,10 +5,21 @@
 /* append your custom style below */
 
 html[data-mode='light'],
-html:not([data-mode]) {
-  --theme-color: #ff9a9e !important;
-}
-
+html:not([data-mode]),
 html[data-mode='dark'] {
   --theme-color: #ff9a9e !important;
+  --link-color: #ff9a9e !important;
+  --link-hover-color: #ff7480 !important;
+  --sidebar-active-color: #ff9a9e !important;
+  --sidebar-btn-color: #ff9a9e !important;
+  --avatar-border-color: #ff9a9e !important;
+}
+
+/* Forzamos el rosa en las etiquetas y botones */
+#page-category a:hover, 
+#page-tag a:hover, 
+.post-tags .post-tag:hover,
+.post-meta a:not([class]):hover {
+  color: #ff9a9e !important;
+  border-color: #ff9a9e !important;
 }
